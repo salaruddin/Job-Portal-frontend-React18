@@ -7,7 +7,7 @@ import CustomLinearProgress from "./components/custom-linear-progress/CustomLine
 
 
 const Home = lazy(()=> import("./pages/home/Home.page"));
-const Company = lazy(()=> import("./pages/companies/Company.page"));
+const Company = lazy(()=> import("./pages/companies/Companies.page"));
 
 function App() {
   const { darkMode } = useContext(ThemeContext);
