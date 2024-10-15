@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar.component";
 import { Route, Routes } from "react-router-dom";
 import CustomLinearProgress from "./components/custom-linear-progress/CustomLinearProgress.component";
 import AddJob from "./pages/jobs/AddJob.page";
+import AddCandidate from "./pages/candidates/AddCandidate.page";
 
 const Home = lazy(() => import("./pages/home/Home.page"));
 const Company = lazy(() => import("./pages/companies/Companies.page"));
@@ -33,6 +34,7 @@ function App() {
             </Route>
             <Route path="/candidates">
               <Route index element={<Candidates />} />
+              <Route path="add" element={<AddCandidate />} />
             </Route>
           </Routes>
         </Suspense>

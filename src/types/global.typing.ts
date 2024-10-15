@@ -44,3 +44,5 @@ export interface ICreateCandidateDto {
   coverLetter: string;
   jobId: string;
 }
+
+

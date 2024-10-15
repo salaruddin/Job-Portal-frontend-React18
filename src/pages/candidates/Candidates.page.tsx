@@ -5,7 +5,6 @@ import { ICandidate } from "../../types/global.typing";
 import { Button, CircularProgress } from "@mui/material";
 import { Add } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
-import JobsGrid from "../../components/jobs/JobsGrid.component";
 import CandidatesGrid from "../../components/candidates/CandidatesGrid.component";
 
 const Candidates = () => {
@@ -27,8 +26,6 @@ const Candidates = () => {
             setLoading(false);
          });
    }, []);
-
-   //    console.log(companies);
 
    return (
       <div className="content candidates">
