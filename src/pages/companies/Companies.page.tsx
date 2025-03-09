@@ -9,7 +9,7 @@ import CompaniesGrid from "../../components/companies/CompaniesGrid.component";
 
 const Companies = () => {
    const [companies, setCompanies] = useState<ICompany[]>([]);
-   const [loading, setLoading] = useState<boolean>(false);
+   const [loading, setLoading] = useState(false);
    const redirect = useNavigate();
 
    useEffect(() => {
